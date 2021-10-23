@@ -10,25 +10,25 @@ export default function Estimate() {
                 <tbody>
                     <tr>
                         <td className="w-96">Total score</td>
-                        <td>80</td>
+                        <td className="font-bold">80</td>
                     </tr>
                     <tr>
                         <td className="w-96">Environment</td>
-                        <td>45</td>
+                        <td className="font-bold">45</td>
                     </tr>
                     <tr>
                         <td className="w-96">Social</td>
-                        <td>78</td>
+                        <td className="font-bold">78</td>
                     </tr>
                     <tr>
                         <td className="w-96">Governance</td>
-                        <td>89</td>
+                        <td className="font-bold">89</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div>
-          <Button onClick={() => window.location.href='/findmyifa'}>Find y</Button>
+          <Button onClick={() => window.location.href='/findmyifa'}>Find my IFA</Button>
         </div>
     </div>
   )
