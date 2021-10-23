@@ -1,7 +1,5 @@
 import Button from '../components/Button'
 import styles from '../styles/Home.module.css'
-import { useState } from 'react'
-
 
 export default function Estimate() {
   return (
@@ -30,7 +28,7 @@ export default function Estimate() {
             </table>
         </div>
         <div>
-          <Button onClick={() => window.location.href='/findifa'}>Find my IFA</Button>
+          <Button onClick={() => window.location.href='/findmyifa'}>Find y</Button>
         </div>
     </div>
   )
