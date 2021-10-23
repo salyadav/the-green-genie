@@ -1,7 +1,8 @@
 export default [
     {
         qId: 1, 
-        question: "Please provide us a with a list of your current investments."
+        question: "Please provide us a with a list of your current investments.",
+        options: [],
     }, {
         qId: 2, 
         question: "How often do you use the public transport?"
