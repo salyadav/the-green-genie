@@ -1,5 +1,4 @@
-// base image
-FROM node:17.0.1-darwin
+FROM node:17.0.1-alpine
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json /app/
