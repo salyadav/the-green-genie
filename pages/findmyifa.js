@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css'
 import ifaList from '../constants/myifa'
 import Image from 'next/image'
+import Button from "../components/Button";
 
 const Card = ({data}) => {
     return (
@@ -19,6 +20,7 @@ const Card = ({data}) => {
 
 export default function FindIfa() {
   return (
+      <main>
     <div className={styles.container}>
         <h1 className="text-4xl font-bold my-10">Our top matched IFAs for you</h1>
         <div className="flex cursor-pointer">
@@ -29,5 +31,12 @@ export default function FindIfa() {
             }
         </div>
     </div>
+        <div>
+          <div className= "flex justify-center">
+            <Button onClick={() => window.location.href='/estimate'}>Go Back</Button>
+            <Button onClick={() => window.location.href='/blog'}>Resources</Button>
+          </div>
+        </div>
+      </main>
   )
 };

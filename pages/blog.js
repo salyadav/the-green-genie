@@ -19,18 +19,22 @@ const Card = ({data}) => {
 export default function FindArticles() {
   return (
       <main>
-      <div className="bg-green-500 py-40">
-        <h1 className={styles.title}>
-          <span className="font-bold">Interested in learning more?</span>
-          <div className="text-black-400 text-sm pl-4">Here's a curated list of resources for you.</div>
-        </h1>
-      </div>
-          <div className="pb-20">
-        <h1 className={styles.title}>
-          <span className="font-bold">{"Articles"}</span>
-          <Image src="/article.png" width={96} height={96}  />
-        </h1>
-      </div>
+        <div className="bg-green-500 py-40">
+          <h1 className={styles.title}>
+            <span className="font-bold">Interested in learning more?</span>
+            <div className="text-black-400 text-sm pl-4">Here's a curated list of resources for you.</div>
+          </h1>
+        </div>
+        <div className=" flex justify-center ... pb-10 pt-10">
+          <div>
+          <h1 className={styles.title}>
+            <span className="font-bold pt-20">{"Blogs"}</span>
+          </h1>
+          </div>
+            {/*<div className="pl-10 ... ">*/}
+              {/*<Image src="/article.png" width={96} height={96} />*/}
+            {/*</div>*/}
+        </div>
         <div>
           <div className="flex cursor-pointer">
             {
@@ -40,16 +44,20 @@ export default function FindArticles() {
             }
           </div>
         </div>
-        <div className="pb-20">
-          <h1 className={styles.title}>
-            <span className="font-bold">{"Podcasts"}</span>
-            <Image src="/mike.png" width={96} height={96} />
-          </h1>
+        <div className=" flex justify-center ... pb-10 pt-10">
+          <div>
+            <h1 className={styles.title}>
+              <span className="pt-96 font-bold ...">{"Podcasts"}</span>
+            </h1>
+          </div>
+          {/*<div>*/}
+            {/*<Image src="/mike.png" width={96} height={96} />*/}
+          {/*</div>*/}
         </div>
         <div>
           <div className="flex cursor-pointer">
             {
-              podcastList.map((val, ind) => (
+              blogList.map((val, ind) => (
                   <Card key={ind} data={val} />
               ))
             }
