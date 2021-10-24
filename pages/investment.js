@@ -1,6 +1,5 @@
 import styles from '../styles/Home.module.css'
 import Button from '../components/Button'
-import stockList from '../constants/stocks'
 
 export default function GetStarted() {
   return (
@@ -53,14 +52,9 @@ export default function GetStarted() {
           </div>
         </div>
         <div>
-          {/* <div>
-            <div className="flex justify-start text-4xl font-medium pl-20 pt-12 ">AMZN
-                <span className="pl-8"> $<span className="text-red-500">3,3355.55</span></span>
-              </div>
-          </div> */}
           <div>
               <div className="flex justify-between text-4xl font-medium px-20 pt-12 "><div className="pl-8"> AMZN
-                $<span className="text-green-500">3,3355.55</span></div>
+                $<span className="text-red-500">3,3355.55</span></div>
                 <div className="py-2 px-10 text-sm font-bold text-gray-200 rounded-md bg-yellow-600">Reconsider</div>
               </div>
           </div>

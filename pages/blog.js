@@ -25,7 +25,7 @@ export default function FindArticles() {
             <div className="text-black-400 text-sm pl-4">Here's a curated list of resources for you.</div>
           </h1>
         </div>
-        <div className=" flex justify-center ... pb-10 pt-10">
+        <div className=" flex justify-center pb-10 pt-10">
           <div>
           <h1 className={styles.title}>
             <span className="font-bold pt-20">{"Blogs"}</span>
@@ -44,10 +44,10 @@ export default function FindArticles() {
             }
           </div>
         </div>
-        <div className=" flex justify-center ... pb-10 pt-10">
+        <div className=" flex justify-center pb-10 pt-10">
           <div>
             <h1 className={styles.title}>
-              <span className="pt-96 font-bold ...">{"Podcasts"}</span>
+              <span className="pt-96 font-bold">{"Podcasts"}</span>
             </h1>
           </div>
           {/*<div>*/}
