@@ -11,7 +11,7 @@ export default [
     text: "MSCI is a leading provider of critical decision support tools and services for the global investment community.",
   }, {
     blogId: 3,
-    link: "https://blog.pimco.com/en/?tag=ESG",
+    link: "https://blog.pimco.com/en/?q=ESG",
     headText: "PIMCO Blog",
     text: "PIMCO believes that performance starts with preparation. It's aim is to deliver forward-looking solutions that maximize the possibilities for our clients.",
   }, {

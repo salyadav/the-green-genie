@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 import blogList from '../constants/blogs.js'
 import podcastList from '../constants/podcasts.js'
 import Image from 'next/image'
+import Button from "../components/Button";
 
 const Card = ({data}) => {
   return (
@@ -62,6 +63,9 @@ export default function FindArticles() {
               ))
             }
           </div>
+        </div>
+        <div className= "flex justify-center pt-10">
+          <Button onClick={() => window.location.href='/findmyifa'}>Go Back</Button>
         </div>
       </main>
 
