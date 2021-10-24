@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import Button, { Breadcrumb } from './Button';
 import esgQns from '../constants/esgprofiling';
 import { useAppContext } from '../context/AppContext';
+import { useRouter } from 'next/router'
 
 const QuestionCard = ({ qnCount, setQnCount }) => {
     const [ans, setAns] = useState('');
     const [selectedBreadcrumb, setSelectedBreadcrumb] = useState(-1);
     const { esgData, setEsgData } = useAppContext();
+    const router = useRouter();
 
     const saveAnswers = (answer) => {
         const map = new Map(esgData);
@@ -31,7 +33,7 @@ const QuestionCard = ({ qnCount, setQnCount }) => {
                     {
                         current.options.map((val, ind) => (
                             <Breadcrumb selected={ind == selectedBreadcrumb} key={ind} onClick={() => {
-                                setAns(selectedBreadcrumb);
+                                setAns(ind);
                                 setSelectedBreadcrumb(ind);
                             }}>{val}</Breadcrumb>
                         ))
@@ -50,7 +52,8 @@ const QuestionCard = ({ qnCount, setQnCount }) => {
                         resetValues();
                         setQnCount(qnCount => qnCount + 1);
                     } else {
-                        window.location.href = '/estimate'
+                        // window.location.href = '/estimate'
+                        router.push('/estimate')
                     }
                 }}>{qnCount < esgQns.length - 1 ? "Next" : "Estimate"}</Button>
             </div>
