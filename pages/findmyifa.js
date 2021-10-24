@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import ifaList from '../constants/myifa'
-import Image from 'next/Image'
+import Image from 'next/image'
 
 const Card = ({data}) => {
     return (
