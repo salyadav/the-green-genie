@@ -57,7 +57,7 @@ export default function FindArticles() {
         <div>
           <div className="flex cursor-pointer">
             {
-              blogList.map((val, ind) => (
+              podcastList.map((val, ind) => (
                   <Card key={ind} data={val} />
               ))
             }
