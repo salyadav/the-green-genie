@@ -5,7 +5,7 @@ export default [
     contact: "+1 450-8152787",
     email: "tejas@gmail.com",
     url: "",
-    esgScore: "78",
+    esgScore: "12",
     noOfEsgClients: "12",
     link: "https://www.linkedin.com/in/tejas-bhuwania"
   }, {
@@ -14,7 +14,7 @@ export default [
     contact: "+1 450-8152909",
     email: "tehranb@gmail.com",
     url: "",
-    esgScore: "64",
+    esgScore: "35",
     noOfEsgClients: "34",
     link: ""
   }, {
@@ -23,7 +23,7 @@ export default [
     contact: "+1 450-8152321",
     email: "ojzanrew@gmail.com",
     url: "",
-    esgScore: "90",
+    esgScore: "10",
     noOfEsgClients: "11",
     link: ""
   }, {
@@ -32,7 +32,7 @@ export default [
     contact: "+1 450-8157873",
     email: "rmalhotra@gmail.com",
     url: "",
-    esgScore: "89",
+    esgScore: "14",
     noOfEsgClients: "8",
     link: ""
   }
