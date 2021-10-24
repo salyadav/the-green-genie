@@ -19,7 +19,7 @@ export default function About() {
         </h1>
       </div>
       <div className={styles.title}>
-        <Image src="/esg_rating.png" width={600} height={500} />
+        <Image src="/esg_rating.webp" width={500} height={500} />
         <div><a href="https://www.theprivateoffice.com/investing/what-is-esg-investing"><span className="text-sm text-gray-400 underline">source: theprivateoffice</span></a></div>
       </div>
       <div className="bg-green-500 py-40 mt-10">
@@ -48,10 +48,13 @@ export default function About() {
         <Image src="/equifax_fall.png" width={1000} height={500} />
       </div>
       <div className="flex gap-5 px-20 pb-20">
-        <Image src="/global_risk.png" width={1000} height={500} />
+        <div>
+          <Image src="/global_risk.png" width={1000} height={500} />
+          <div className="text-gray-400 text-sm underline pl-4">Source: Kotak</div>
+        </div>
         <div className="w-1/3 pr-10">
           <h1 className="text-3xl font-bold py-5">
-            <span className="justify-start ... font-bold ...">Why is ESG investing important?</span>
+            <span className="justify-start font-bold">Why is ESG investing important?</span>
           </h1>
           <div className="leading-snug text-md">Risks to investments are no more related to just economic issues. In the past 10 years,  11 out of 55 (20%) global issues are Economic in nature, the rest pertain to ESG risks</div>
         </div>
