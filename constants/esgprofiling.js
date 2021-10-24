@@ -58,9 +58,9 @@ export default [
   }, {
     qId: 11,
     classification: "G",
-    question: "Do own a gun?",
-    options: ["Yes", "No"],
-    weightage: [10, 0]
+    question: "Do you own a gun?",
+    options: ["Yes", "No", "Choose not to answer"],
+    weightage: [10, 0, 5]
   }, {
     qId: 12,
     classification: "S",
