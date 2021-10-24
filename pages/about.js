@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Button from "../components/Button";
-import Image from "next/image";
+import Image from "next/Image";
 
 export default function About() {
   return (
