@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
 import blogList from '../constants/blogs.js'
 import podcastList from '../constants/podcasts.js'
-import Image from 'next/Image'
+import Image from 'next/image'
 
 const Card = ({data}) => {
   return (
