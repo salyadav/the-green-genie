@@ -25,11 +25,11 @@ const QuestionCard = ({ qnCount, setQnCount, esgData, setEsgData }) => {
                 {current.question}
             </h1>
             {
-                current.options.length ? <div>
+                current.options ? <div>
                     {
                         current.options.map((val, ind) => (
                             <Breadcrumb selected={ind == selectedBreadcrumb} key={ind} onClick={() => {
-                                setAns(val);
+                                setAns(selectedBreadcrumb);
                                 setSelectedBreadcrumb(ind);
                             }}>{val}</Breadcrumb>
                         ))

@@ -28,6 +28,7 @@ export default function Estimate() {
             </table>
         </div>
         <div>
+          <Button type="hollow" onClick={() => window.location.href='/findmyifa'}>Investment breakdown</Button>
           <Button onClick={() => window.location.href='/findmyifa'}>Find my IFA</Button>
         </div>
     </div>
