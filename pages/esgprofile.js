@@ -7,7 +7,7 @@ export default function EsgProfile() {
     const [qnCount, setQnCount] = useState(0); 
     return (
         <div className={styles.container}>
-            <QuestionCard qnCount={qnCount} setQnCount={setQnCount} esgData={esgData} setEsgData={setEsgData}></QuestionCard>
+            <QuestionCard esgData={esgData} setEsgData={setEsgData}></QuestionCard>
         </div>
     );
 }

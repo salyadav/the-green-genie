@@ -1,7 +1,7 @@
 export default [
     {
-        qId: 1, 
-        question: "Please provide us a with a list of your current investments with their symbols separated by a comma. Example: AMZN, TSLA, NFLX",
+        qId: 1,
+        question: "Please provide us a with a list of your current investments with their symbols separated by a comma. Example: amzn, tsla, nflx",
         options: [],
     }, {
         qId: 2,
@@ -14,7 +14,7 @@ export default [
     }, {
         qId: 4, 
         question: "How many miles do you travel via personal car in a month?",
-        options: ["I do not have a car", "< 5,00", "5,01 - 1,000", "1,000 - 1,500", "> 1,500", "I only use my car"],
+        options: ["I do not have a car", "< 500", "501 - 1,000", "1,000 - 1,500", "> 1,500"],
     }, {
         qId: 5, 
         question: "How much electricity (kWh) do you use every month?",
