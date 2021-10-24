@@ -1,12 +1,19 @@
-import { createContext, useContext } from 'react';
+import { createContext, useContext, useState, useMemo } from 'react';
 
-const AppContext = createContext();
+const AppContext = createContext({
+  esgData: null, 
+  setEsgData: () => {}
+});
 
 export function AppWrapper({ children }) {
-  let sharedState = new Map();
+  const [esgData, setEsgData] = useState(null);
+  const value = useMemo(
+    () => ({ esgData, setEsgData }), 
+    [esgData]
+  );
 
   return (
-    <AppContext.Provider value={sharedState}>
+    <AppContext.Provider value={value}>
       {children}
     </AppContext.Provider>
   );

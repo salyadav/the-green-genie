@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Button, { Breadcrumb } from './Button';
-import esgQns from '../constants/esgprofiling'
+import esgQns from '../constants/esgprofiling';
+import { useAppContext } from '../context/AppContext';
 
-const QuestionCard = ({ qnCount, setQnCount, esgData, setEsgData }) => {
+const QuestionCard = ({ qnCount, setQnCount }) => {
     const [ans, setAns] = useState('');
     const [selectedBreadcrumb, setSelectedBreadcrumb] = useState(-1);
+    const { setEsgData } = useAppContext();
 
     const saveAnswers = (answer) => {
-        const map = new Map(esgData);
-        map.set(qnCount, answer);
-        setEsgData(map);
+        setEsgData((prev) => prev.set(qnCount, answer));
     };
 
     const current = esgQns[qnCount];
@@ -34,8 +34,8 @@ const QuestionCard = ({ qnCount, setQnCount, esgData, setEsgData }) => {
                             }}>{val}</Breadcrumb>
                         ))
                     }
-                </div> : 
-                <input type="text" className="border p-5 w-full text-xl border rounded-lg" value={ans} onChange={(e) => setAns(e.target.value)}></input>
+                </div> :
+                    <input type="text" className="border p-5 w-full text-xl border rounded-lg" value={ans} onChange={(e) => setAns(e.target.value)}></input>
             }
             <div className="flex justify-between">
                 {qnCount > 0 ? <Button type="hollow" onClick={() => {

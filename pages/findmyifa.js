@@ -5,10 +5,7 @@ import Image from 'next/Image'
 const Card = ({data}) => {
     return (
         <div className={styles.card}>
-            <Image src="/../public/profilepic.png" width={96} height={96} />
-            {/* <div>
-                <img src="https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png"/>
-            </div> */}
+            <Image src="/profilepic.png" width={96} height={96} />
             <h1 className="font-bold text-green-600 text-lg">{data.name}</h1>
             <div className="text-sm text-gray-400 py-1">{data.email}</div>
             <div className="text-sm text-gray-500">{data.contact}</div>
