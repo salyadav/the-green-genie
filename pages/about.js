@@ -26,7 +26,6 @@ export default function About() {
               <span className="font-bold ...">ESG = Environmental Social & Corporate Governance</span>
             </h1>
           </div>
-
         </div>
         <div className={styles.title}>
           <Image src="/../public/esg_rating.png" width={600} height={500} />

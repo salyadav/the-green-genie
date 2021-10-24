@@ -1,17 +1,17 @@
-import React, { useCallback, useState } from "react";
+import React, { useState } from "react";
 import Button, { Breadcrumb } from './Button';
 import esgQns from '../constants/esgprofiling'
 
-const QuestionCard = ({ esgData, setEsgData }) => {
+const QuestionCard = ({ qnCount, setQnCount, esgData, setEsgData }) => {
     const [ans, setAns] = useState('');
     const [selectedBreadcrumb, setSelectedBreadcrumb] = useState(-1);
-    const [qnCount, setQnCount] = useState(0);
-    const saveAnswers = useCallback((answer) => {
+
+    const saveAnswers = (answer) => {
         const map = new Map(esgData);
         map.set(qnCount, answer);
         setEsgData(map);
-        console.log(qnCount, map)
-    }, [setEsgData]);
+    };
+
     const current = esgQns[qnCount];
 
     const resetValues = () => {

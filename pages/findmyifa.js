@@ -6,7 +6,10 @@ import Image from 'next/image'
 const Card = ({data}) => {
     return (
         <div className={styles.card}>
-            <Image src="/public/profilepic.png" width={96} height={96} />
+            <Image src="/../public/profilepic.png" width={96} height={96} />
+            {/* <div>
+                <img src="https://img.icons8.com/office/80/000000/gender-neutral-user.png"/>
+            </div> */}
             <h1 className="font-bold text-green-600 text-lg">{data.name}</h1>
             <div className="text-sm text-gray-400 py-1">{data.email}</div>
             <div className="text-sm text-gray-500">{data.contact}</div>

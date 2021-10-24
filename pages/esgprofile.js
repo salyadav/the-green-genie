@@ -4,10 +4,16 @@ import { useState } from 'react'
 
 export default function EsgProfile() {
     const [esgData, setEsgData] = useState(null);
-    const [qnCount, setQnCount] = useState(0); 
+    const [qnCount, setQnCount] = useState(0);
+
     return (
         <div className={styles.container}>
-            <QuestionCard esgData={esgData} setEsgData={setEsgData}></QuestionCard>
+            <QuestionCard 
+                qnCount={qnCount} 
+                setQnCount={setQnCount} 
+                esgData={esgData} 
+                setEsgData={setEsgData}
+            ></QuestionCard>
         </div>
     );
 }
