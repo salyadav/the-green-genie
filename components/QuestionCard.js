@@ -6,10 +6,12 @@ import { useAppContext } from '../context/AppContext';
 const QuestionCard = ({ qnCount, setQnCount }) => {
     const [ans, setAns] = useState('');
     const [selectedBreadcrumb, setSelectedBreadcrumb] = useState(-1);
-    const { setEsgData } = useAppContext();
+    const { esgData, setEsgData } = useAppContext();
 
     const saveAnswers = (answer) => {
-        setEsgData((prev) => prev.set(qnCount, answer));
+        const map = new Map(esgData);
+        map.set(qnCount, answer);
+        setEsgData(map);
     };
 
     const current = esgQns[qnCount];
