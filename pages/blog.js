@@ -2,7 +2,7 @@ import styles from '../styles/Home.module.css'
 import blogList from '../constants/blogs.js'
 import podcastList from '../constants/podcasts.js'
 import Image from 'next/image'
-import Button from "../components/Button";
+import Button from '../components/Button';
 
 const Card = ({data}) => {
   return (
@@ -23,10 +23,10 @@ export default function FindArticles() {
         <div className="bg-green-500 py-40">
           <h1 className={styles.title}>
             <span className="font-bold">Interested in learning more?</span>
-            <div className="text-black-400 text-sm pl-4">Here's a curated list of resources for you.</div>
           </h1>
+          <div className="text-black-400 flex justify-center text-2xl pl-4">Here's a curated list of resources for you.</div>
         </div>
-        <div className=" flex justify-center ... pb-10 pt-10">
+        <div className=" flex justify-center pb-10 pt-10">
           <div>
           <h1 className={styles.title}>
             <span className="font-bold pt-20">{"Blogs"}</span>
@@ -45,10 +45,10 @@ export default function FindArticles() {
             }
           </div>
         </div>
-        <div className=" flex justify-center ... pb-10 pt-10">
+        <div className=" flex justify-center pb-10 pt-10">
           <div>
             <h1 className={styles.title}>
-              <span className="pt-96 font-bold ...">{"Podcasts"}</span>
+              <span className="pt-96 font-bold">{"Podcasts"}</span>
             </h1>
           </div>
           {/*<div>*/}
