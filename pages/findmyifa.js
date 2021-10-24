@@ -32,7 +32,7 @@ export default function FindIfa() {
             </div>
         </div>
         <div className= "flex justify-center">
-            <Button onClick={() => window.location.href='/estimate'}>Go Back</Button>
+            <Button onClick={() => window.location.href='/getstarted'}>Go Back</Button>
             <Button onClick={() => window.location.href='/blog'}>Resources</Button>
         </div>
       </main>
