@@ -32,6 +32,7 @@ export default function Estimate() {
     if (esgData) calculateScore(esgData)
     const result = esgData ? calculateScore(esgData) : null;
     const total = result ? result.e + result.s + result.g : 0;
+
   return (
       <main>
         <div className="bg-green-500 py-20">
@@ -43,7 +44,7 @@ export default function Estimate() {
         <div className="grid grid-cols-4 gap-10">
           <div className="pt-20">
             <div className="flex justify-center text-7xl">
-              <span className="font-bold text-green-500"> {total} </span>
+              <span className="font-bold text-green-500"> {result ? result.e : 0} </span>
             </div>
             <div className="flex justify-center font-bold text-3xl">
               Environment Score
@@ -51,7 +52,7 @@ export default function Estimate() {
           </div>
           <div className="pt-20">
             <div className="flex justify-center text-7xl">
-              <span className="font-bold text-green-500"> {result.e} </span>
+              <span className="font-bold text-green-500"> {result ? result.s : 0} </span>
             </div>
             <div className="flex justify-center font-bold text-3xl">
               Sustainability Score
@@ -59,7 +60,7 @@ export default function Estimate() {
           </div>
           <div className="pt-20">
             <div className="flex justify-center text-7xl">
-              <span className="font-bold text-green-500"> {result.s} </span>
+              <span className="font-bold text-green-500"> {result ? result.g : 0} </span>
             </div>
             <div className="flex justify-center font-bold text-3xl">
               Governance Score
@@ -67,7 +68,7 @@ export default function Estimate() {
           </div>
           <div className="pt-20">
             <div className="flex justify-center text-7xl">
-              <span className="font-bold text-yellow-500"> {result.g} </span>
+              <span className="font-bold text-yellow-500">{total} </span>
             </div>
             <div className="flex justify-center font-bold text-3xl">
               Total Score
