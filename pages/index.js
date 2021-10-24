@@ -18,11 +18,10 @@ export default function Home() {
           <h1 className={styles.title}>
             <span className="font-bold">The Green <span className="text-green-600">Genie!</span></span>
           </h1>
-
           <p className="px-2 text-lg text-gray-500">
             Go green with your investment. Find your Genie!
           </p>
-          <Button onClick={() => window.location.href='/esgprofile'}>Get Started!</Button>
+          <Button onClick={() => window.location.href='/getstarted'}>Get Started!</Button>
         </div>
       </main>
       <footer className={styles.footer}>
