@@ -17,12 +17,12 @@ export default [
     }, {
       podcastId: 4,
       link: "https://www.americaadapts.org/",
-      headText: "America Adapts - The Climate Change Podcast",
+      headText: "America Adapts",
     text: "A changing climate presents humanity with only one option: adapt. Each episode, Doug Parsons sits down with scientists, activists, policymakers, and journalists to discuss the tough questions facing this country and the world as we confront humanity's greatest challenge."
     }, {
       podcastId: 5,
       link: "https://esgexperience.libsyn.com/",
-      headText: "The ESG Experiencee",
+      headText: "The ESG Experience",
     text: "Conversations about ESG and beyond, brought to you by Goby. Whether you’re an ESG expert, or just dipping your toes in the ESG universe to understand how it could help with engaging stakeholders, mitigating risks, and attracting investors, this podcast is for you."
     },
   ];
