@@ -2,11 +2,12 @@ import Button from '../components/Button'
 import styles from '../styles/Home.module.css'
 import ifaList from '../constants/myifa'
 import Image from 'next/image'
+import profile from '../public/profilepic.png';
 
 const Card = ({data}) => {
     return (
         <div className={styles.card}>
-            <Image src="/public/profilepic.png" width={96} height={96} />
+            <Image src={profile} width={96} height={96} />
             <h1 className="font-bold text-green-600 text-lg">{data.name}</h1>
             <div className="text-sm text-gray-400 py-1">{data.email}</div>
             <div className="text-sm text-gray-500">{data.contact}</div>
