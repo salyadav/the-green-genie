@@ -1,9 +1,8 @@
 import QuestionCard from '../components/QuestionCard'
 import styles from '../styles/Home.module.css'
-import { useState } from 'react'
+import { useState } from 'react';
 
 export default function EsgProfile() {
-    const [esgData, setEsgData] = useState(null);
     const [qnCount, setQnCount] = useState(0);
 
     return (
@@ -11,8 +10,6 @@ export default function EsgProfile() {
             <QuestionCard 
                 qnCount={qnCount} 
                 setQnCount={setQnCount} 
-                esgData={esgData} 
-                setEsgData={setEsgData}
             ></QuestionCard>
         </div>
     );
