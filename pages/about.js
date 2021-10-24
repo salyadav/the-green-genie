@@ -20,7 +20,6 @@ export default function About() {
 
         </div>
         <div className="static ...">
-
           <div className="static ...">
             <h1 className={styles.title}>
               <span className="font-bold ...">ESG = Environmental Social & Corporate Governance</span>
@@ -61,6 +60,27 @@ export default function About() {
               <span className="justify-start ... font-bold ...">Why is ESG investing important?</span>
             </h1>
             <span> Risks to investments are no more related to just economic issues. In the past 10 years,  11 out of 55 (20%) global issues are Economic in nature, the rest pertain to ESG risks</span>
+          </div>
+        </div>
+        <div className="static ...">
+          <div className="static ...">
+            <h1 className={styles.title}>
+              <span className="font-bold ...">How does ESG investing create value?</span>
+            </h1>
+          </div>
+        </div>
+        <div className={styles.title}>
+          <Image src="/../public/create_value.png" width={600} height={500} />
+        </div>
+        <div className="grid grid-cols-2 gap-5">
+          <div className="static ... h-48 flex flex-wrap content-center ... ">
+            <h1 className={styles.title}>
+              <span className="font-bold ...">ESG investing is here to stay</span>
+            </h1>
+            <span> A survey conducted by Bloomberg showed that over 500 investors plan to invest in companies with strong initiatives over the next 5 years.</span>
+          </div>
+          <div className={styles.title}>
+            <Image src="/../public/show_trend.png" width={750} height={600} />
           </div>
         </div>
 
