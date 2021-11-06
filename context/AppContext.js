@@ -1,24 +1,42 @@
 import { createContext, useContext, useState, useMemo } from 'react';
 
-const AppContext = createContext({
+const EsgContext = createContext({
   esgData: null, 
   setEsgData: () => {}
 });
 
+const RiskContext = createContext({
+  riskData: null, 
+  setRiskData: () => {}
+});
+
 export function AppWrapper({ children }) {
   const [esgData, setEsgData] = useState(null);
-  const value = useMemo(
+  const [riskData, setRiskData] = useState(null);
+  
+  const esgValue = useMemo(
     () => ({ esgData, setEsgData }), 
     [esgData]
   );
+  
+  const riskValue = useMemo(
+    () => ({ riskData, setRiskData }), 
+    [riskData]
+  );
 
   return (
-    <AppContext.Provider value={value}>
-      {children}
-    </AppContext.Provider>
+    <RiskContext.Provider value={riskValue}>
+      <EsgContext.Provider value={esgValue}>
+        {children}
+      </EsgContext.Provider>
+    </RiskContext.Provider>
   );
 }
 
-export function useAppContext() {
-  return useContext(AppContext);
+export function useEsgContext() {
+  return useContext(EsgContext);
+}
+
+export function useRiskContext() {
+  return useContext(RiskContext);
 }

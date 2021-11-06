@@ -11,7 +11,7 @@ const Button = ({ children, type, onClick }) => {
 export const Breadcrumb = ({ children, onClick, selected }) => { 
     const bg = selected ? "bg-gray-300" : "";
     return (
-    <button onClick={onClick} className={bg + " cursor-pointer text-gray-600 font-bold py-2 px-8 m-2 border rounded-md"}>
+    <button onClick={onClick} className={bg + " cursor-pointer text-gray-600 py-2 px-8 m-2 border rounded-md text-left"}>
         {children}
     </button>
 )};

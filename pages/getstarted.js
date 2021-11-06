@@ -10,6 +10,7 @@ export default function GetStarted() {
       <div className="flex">
           <Button onClick={() => window.location.href='/about'}>Learn about ESG</Button>
           <Button onClick={() => window.location.href='/esgprofile'}>ESG Profiling</Button>
+          <Button onClick={() => window.location.href='/riskprofile'}>Risk Profiling</Button>
       </div>
     </div>
   )
