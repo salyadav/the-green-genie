@@ -38,7 +38,7 @@ export default [
     qId: 8,
     question: "What is your objective for investing?",
     options: ["Compounding your money into a sizeable corpus", "Earning a passive source of income from interest, coupon, and/or dividend payments", "Attaining financial independence", "Having a steady source of income for your retirement", "Creating an educational fund for the future of your children", "Investing for a specific goal in the future"],
-    weightage: [, 4, 7, 10],
+    weightage: [2, 4, 6, 8, 10, 12],
   }, {
     qId: 9,
     question: "How much experience do you have investing?",
