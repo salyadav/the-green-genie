@@ -21,7 +21,7 @@ const riskInclination = [
 export default function Estimate() {
     const { riskData } = useRiskContext();
     const result = riskData ? calculateRiskScore(riskData) : 0;
-    const riskTypeIndex = 0; //to change
+    const riskTypeIndex = result < 70 ? 0 : result < 130 ? 1 : 2;
     const router = useRouter();
 
     return (
@@ -44,12 +44,12 @@ export default function Estimate() {
                     router.push('../findmyifa')
                 }}>Find my IFA</Button>
                 <Button onClick={() => {
-                    router.push('../bundle')
-                }}>Suggest stock bundle</Button>
+                    router.push('../stock-bundle')
+                }}>Suggested stock bundle</Button>
                 <Button onClick={() => {
                     router.push('../advisory')
                 }}>Get Robo-Advisory</Button>
-                </div>
+            </div>
         </main>
     )
 };
