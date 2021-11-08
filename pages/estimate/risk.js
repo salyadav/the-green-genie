@@ -8,14 +8,17 @@ import { useRouter } from 'next/router'
 const riskInclination = [
     {
         type: "Conservative",
-        description: "I am Conservative."
+        description: `Seeking safety of capital, minimal risk and minimum or low returns`,
+        claus: `* Possible Allocation - Equity: 0-10%; Debt and others: 90-100%`
     }, {
         type: "Moderate",
-        description: "I am Moderate."
+        description: `Looking for relatively higher returns over medium to long term with modest risk`,
+        claus: `*Possible Allocation - Equity: 40-60%; Debt and others: 40-60%`
     }, {
         type: "Aggresive",
-        description: "I am Aggresive."
-    }
+        description: `Willing to take significant risks to maximise returns over the long terms`,
+        claus: `*Possible Allocation - Equity: 90-100%; Debt and others: 0-10%`
+}
 ];
 
 export default function Estimate() {
@@ -37,7 +40,9 @@ export default function Estimate() {
                 }</div>
                 <div className="p-10 mx-10 lg:mx-20 border rounded-md">{
                     riskInclination[riskTypeIndex].description
-                }</div>
+                }
+                <div className='text-sm text-gray-500'>{riskInclination[riskTypeIndex].claus}</div>
+                </div>
             </div>
             <div className= "flex flex-wrap justify-center mx-10">
                 <Button onClick={() => {
