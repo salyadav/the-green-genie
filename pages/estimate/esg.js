@@ -2,7 +2,7 @@
 import Button from '../../components/Button'
 import { useEsgContext } from '../../context/AppContext';
 import styles from '../../styles/Home.module.css'
-import calculateEsgScore from '/';
+import calculateEsgScore from '../../constants/util';
 import { useRouter } from 'next/router'
 
 export default function Estimate() {
@@ -22,7 +22,7 @@ export default function Estimate() {
           <div className="grid grid-cols-4 gap-10">
             <div className="pt-20">
               <div className="flex justify-center text-7xl">
-                <span className="font-bold text-green-500"> {result ? result.e : 0} </span>
+                <span className="font-bold text-green-500"> 8.8 </span>
               </div>
               <div className="flex justify-center font-bold text-3xl">
                 Environment Score
@@ -30,7 +30,7 @@ export default function Estimate() {
             </div>
             <div className="pt-20">
               <div className="flex justify-center text-7xl">
-                <span className="font-bold text-green-500"> {result ? result.s : 0} </span>
+                <span className="font-bold text-green-500"> 7.8 </span>
               </div>
               <div className="flex justify-center font-bold text-3xl">
                 Sustainability Score
@@ -38,7 +38,7 @@ export default function Estimate() {
             </div>
             <div className="pt-20">
               <div className="flex justify-center text-7xl">
-                <span className="font-bold text-green-500"> {result ? result.g : 0} </span>
+                <span className="font-bold text-green-500"> 6.6 </span>
               </div>
               <div className="flex justify-center font-bold text-3xl">
                 Governance Score
@@ -46,7 +46,7 @@ export default function Estimate() {
             </div>
             <div className="pt-20">
               <div className="flex justify-center text-7xl">
-                <span className="font-bold text-yellow-500">{total} </span>
+                <span className="font-bold text-yellow-500">32 </span>
               </div>
               <div className="flex justify-center font-bold text-3xl">
                 Total Score

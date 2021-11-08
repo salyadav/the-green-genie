@@ -2,7 +2,7 @@
 import Button from '../../components/Button'
 import { useRiskContext } from '../../context/AppContext';
 import styles from '../../styles/Home.module.css'
-import { calculateRiskScore } from '/';
+import { calculateRiskScore } from '../../constants/util';
 import { useRouter } from 'next/router'
 
 const riskInclination = [

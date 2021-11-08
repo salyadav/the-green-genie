@@ -97,14 +97,14 @@ const Component = ({ data }) => {
         <Title title="Total ESG Score" score="17" />
       </div>
       <div className="flex justify-between text-2xl font-medium m-5 mt-10">
-        <div> DISCA <span className='text-green-500'>$26.52</span></div>
+        <div> AMZN <span className='text-green-500'>$3,518.99</span></div>
         <Suggestion type='d' />
       </div>
       <div className="grid grid-cols-4 gap-10">
-        <Title title="Environment Score" score="0.1" />
-        <Title title="Sustainable Score" score="8.8" />
-        <Title title="Governance Score" score="8.3" />
-        <Title title="Total ESG Score" score="17" />
+        <Title title="Environment Score" score="6.7" />
+        <Title title="Sustainable Score" score="14.6" />
+        <Title title="Governance Score" score="9.7" />
+        <Title title="Total ESG Score" score="32" />
       </div>
     </div>
   )
