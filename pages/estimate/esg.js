@@ -2,7 +2,7 @@
 import Button from '../../components/Button'
 import { useEsgContext } from '../../context/AppContext';
 import styles from '../../styles/Home.module.css'
-import calculateEsgScore from '../../constants/util';
+import {calculateEsgScore} from '../../constants/util';
 import { useRouter } from 'next/router'
 
 export default function Estimate() {
