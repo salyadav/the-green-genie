@@ -2,7 +2,7 @@
 import esgQns from '../../constants/esgprofiling';
 import riskQns from '../../constants/riskprofiling';
 
-export const calculateEsgScore = (map) => {
+export default calculateEsgScore = (map) => {
     let e = 0, s = 0, g = 0;
     let val;
     for (let i=0; i<esgQns.length; i++) {
